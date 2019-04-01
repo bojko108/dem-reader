@@ -1,0 +1,6 @@
+.vscode/
+node_modules/
+src/data/_cut_bg.tif
+src/data/_cut_bg.tif.aux.xml
+npm-debug.log
+npm-debug.log.*
