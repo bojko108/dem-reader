@@ -3,8 +3,8 @@ import DemReader from '../dist/dem-reader';
 import { multiLineString } from './data/tracks';
 
 describe('DemReader Tests', () => {
-  // const file = './src/data/_cut_bg.tif';
-  const file = './src/data/cut_25m.tif';
+  const file = './src/data/_cut_bg.tif';
+  // const file = './src/data/cut_25m.tif';
 
   it('should create DemReader from local tiff file', function() {
     DemReader.fromFile(file).then(dem => {
@@ -13,7 +13,8 @@ describe('DemReader Tests', () => {
   });
 
   it('should get elevation for point', function() {
-    const point = [42.60788543745605, 23.35463742347579, 812.4079];
+    // const point = [42.60788543745605, 23.35463742347579, 812.4079];
+    const point = [42.160688, 24.123866, 340.899993896483977];
 
     DemReader.fromFile(file).then(dem => {
       dem
